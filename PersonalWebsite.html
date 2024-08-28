@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Website</title>
+<style>
+ul {
+    font-family: 'Georgia', Times, serif;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: lightcyan;
+    padding: 0;
+}
+li {
+    display: inline;
+    float: right;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+h2 {
+    font-size: 30px;
+    font-family: "Georgia", Times, serif;
+    text-align: center;
+}
+img {
+    float: left;
+    width: 500px;
+    height: 500px;
+    border-radius: 50%;
+}
+div.image-container {
+    margin: 0 auto;
+    width: 500px;
+    margin-top: 50px;
+}
+.button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+
+    background-image: url("insta.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 35px;
+    width: 35px;
+    overflow: visible;
+    cursor: pointer;
+}
+body {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.button1 {background-image: url("linkedin.jpg");}
+.button2 {background-image: url("gmail.png");}
+</style>
+</head>
+<body style="background-color: lightcyan;">
+<ul>
+    <h1 style="font-size: 20px;"><li style="float: left;"><a class="active" href="PersonalWebsite.html">Hubert Pilichowski</a></li></h1>
+    <button style="margin-top: 10px;" class="button" onclick="location.href='https://www.instagram.com/h.pilichowski/'" type="button"></button>
+    <button style="margin-top: 10px;" class="button button1" onclick="location.href='https://www.linkedin.com/in/hubert-pilichowski-b370032aa/'" type="button"></button>
+    <button style="margin-top: 10px;" class="button button2" onclick="location.href='mailto:hpilichowski18@gmail.com'" type="button"></button>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+</ul>
+<h2>Hello &#128075, my name is Hubert Pilichowski.</h>
+<div class="image-container">
+    <img src="randomimage.png">
+</div>
+</body>
+</html>

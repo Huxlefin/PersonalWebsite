@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Website</title>
+<style>
+ul {
+    font-family: 'Georgia', Times, serif;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: lightcyan;
+    padding: 0;
+}
+li {
+    display: inline;
+    float: right;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+
+    background-image: url("insta.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 35px;
+    width: 35px;
+    overflow: visible;
+    cursor: pointer;
+}
+.button1 {background-image: url("linkedin.jpg");}
+.button2 {background-image: url("gmail.png");}
+
+.column {
+    float: left;
+    font-family: 'Georgia', Times, serif;
+}
+.right {
+    width: 40%;
+    font-family: 'Georgia', Times, serif;
+    font-size: 15px;
+}
+.left {
+    width: 60%;
+    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    font-size: 25px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<ul>
+    <h1 style="font-size: 20px;"><li style="float: left;"><a class="active" href="PersonalWebsite.html">Hubert Pilichowski</a></li></h1>
+    <button style="margin-top: 10px;" class="button" onclick="location.href='https://www.instagram.com/h.pilichowski/'" type="button"></button>
+    <button style="margin-top: 10px;" class="button button1" onclick="location.href='https://www.linkedin.com/in/hubert-pilichowski-b370032aa/'" type="button"></button>
+    <button style="margin-top: 10px;" class="button button2" onclick="location.href='mailto:hpilichowski18@gmail.com'" type="button"></button>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+</ul>
+<body style="background-color: lightcyan;">
+<div>
+<h1 style="text-align: center; font-family: 'Georgia', Times, serif; margin-top: 100px;">About Me</h>
+</div>
+<div class="row" style="margin-top: 50px;">
+    <div class="column left">
+        <p>Brief Summary</p>
+    </div>
+    <div class="column right">
+        <p style="margin-right:100px;">I am a computer science student at Florida State University.
+             I have a passion for problem-solving and learning how things work. In my spare time,
+              I enjoy learning new disciplines of programming. I have taught myself how to make simple
+               2-dimensional and 3-dimensional games with Unity, a basic understanding of machine
+                learning with PyTorch, and proficiency in HTML, CSS, and JavaScript.
+        </p>
+    </div>
+</div>
+<hr style="color: gray; height: 0.1px; background-color: gray; border-color: gray; width: 90%">
+<div class="row">
+    <div class="column left">
+        <p>Education</p>
+    </div>
+    <div class="column right">
+        <p style="margin-right:100px;">
+            <b>Strawberry Crest High School</b><br><br>
+            At Strawberry Crest High School, I completed the International Baccalareate program, which provided me 
+            with a rigorous curriculum leading to a well-rounded education.<br><br>
+            <b>Florida State University</b><br><br>
+            I am currently pursuing a Bachelor's degree in Computer Science at Florida State University,
+             with the goal of continuing on to a Master's degree in Artificial Intelligence.<br>
+        </p>
+    </div>
+</div>
+<hr style="color: gray; height: 0.1px; background-color: gray; border-color: gray; width: 90%">
+<div class="row">
+    <div class="column left">
+        <p>Programming Languages</p>
+    </div>
+    <div class="column right">
+        <p style="margin-right:100px;">
+            <b>Python</b><br><br>
+            Starting in my sophomore year of high school, I began developing a proficiency in Python
+            through self-directed learning.<br><br>
+            <b>C++</b><br><br>
+            The majority of my coursework in college has focused on C++,
+             allowing me to develop a strong understanding of the language.<br><br>
+            <b>C#</b><br><br>
+            Driven by my interest in video game development,
+             I have gained capability in C# and Unity.<br><br>
+            <b>HTML, CSS, and Javascript</b><br><br>
+            Building this website has enabled me to develop strong skills in HTML, CSS, and JavaScript.<br><br>
+        </p>
+    </div>
+</div>
+<hr style="color: gray; height: 0.1px; background-color: gray; border-color: gray; width: 90%">
+<div class="row">
+    <div class="column left">
+        <p>Work Experience</p>
+    </div>
+    <div class="column right">
+        <p style="margin-right:100px;">
+            <b>Lifeguarding</b><br><br>
+            I hold a Red Cross lifeguard certification and am presently employed at my local pool.<br><br>
+            <b>Shake Smart</b><br><br>
+            I am employed at a protein shake bar situated within the college gym facility.<br><br>
+            <b>Credit Associate</b><br><br>
+            I supported operations in the credit department, ensuring smooth and organized document management.<br><br>
+        </p>
+    </div>
+</div>
+</body>

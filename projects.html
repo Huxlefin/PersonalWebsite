@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Personal Website</title>
+<style>
+ul {
+    font-family: 'Georgia', Times, serif;
+    list-style-type: none;
+    margin: 0;
+    overflow: hidden;
+    background-color: lightcyan;
+    padding: 0;
+}
+li {
+    display: inline;
+    float: right;
+}
+li a{
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+.button {
+    padding: 0;
+    border: none;
+    background-color: transparent;
+    border-radius: 50%;
+
+    background-image: url("insta.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    height: 35px;
+    width: 35px;
+    overflow: visible;
+    cursor: pointer;
+}
+.button1 {background-image: url("linkedin.jpg");}
+.button2 {background-image: url("gmail.png");}
+.column {
+    float: left;
+    font-family: 'Georgia', Times, serif;
+}
+.right {
+    width: 40%;
+    font-family: 'Georgia', Times, serif;
+    font-size: 15px;
+}
+.left {
+    width: 60%;
+    text-align: center;
+    font-family: 'Georgia', Times, serif;
+    font-size: 25px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+body {
+    animation: fadeInAnimation ease 1.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+</style>
+</head>
+<body style="background-color: lightcyan;">
+<ul>
+    <h1 style="font-size: 20px;"><li style="float: left;"><a class="active" href="PersonalWebsite.html">Hubert Pilichowski</a></li></h1>
+    <button style="margin-top: 10px;" class="button" onclick="location.href='https://www.instagram.com/h.pilichowski/'" type="button"></button>
+    <button style="margin-top: 10px;" class="button button1" onclick="location.href='https://www.linkedin.com/in/hubert-pilichowski-b370032aa/'" type="button"></button>
+    <button style="margin-top: 10px;" class="button button2" onclick="location.href='mailto:hpilichowski18@gmail.com'" type="button"></button>
+    <li><a href="about.html">About</a></li>
+    <li><a href="projects.html">Projects</a></li>
+</ul>
+<p style="margin-top: 100px; text-align: center; font-size: 35px; font-family: 'Georgia', Times, serif;"><b>Projects</b></p>
+<div class="row">
+    <div class="column left">
+        <p>
+            <b>Unity Game</b><br><br>
+            <img src="unity.jpg">
+        </p>
+    </div>
+    <div class="column right">
+        <p style="margin-top: 125px; margin-right: 100px;">
+            While studying the process of 3D game production using open-source 3D objects,
+             I developed a simple game featuring a car and a plane.
+             The gameplay involves navigating the car through obstacles 
+             and steering the plane around barriers.
+        </p>
+    </div>
+</div>
+<hr style="color: gray; height: 0.1px; background-color: gray; border-color: gray; width: 90%">
+<div class="row">
+    <div class="column left">
+        <p>
+            <b>Playlist</b><br><br>
+            <img src="playlist.jpg">
+        </p>
+    </div>
+    <div class="column right">
+        <p style="margin-right: 100px; margin-top: 125px;">
+            I practiced dynamic memory allocation by creating a hypothetical playlist application.
+             This application allows users to dynamically add or remove songs from their playlist,
+              ensuring efficient memory usage and real-time updates to the playlist's content. This
+               exercise helped me understand the complexities 
+            of memory management and how to implement flexible data structures in programming.
+        </p>
+    </div>
+</div>
+<hr style="color: gray; height: 0.1px; background-color: gray; border-color: gray; width: 90%">
+<div class="row">
+    <div class="column left">
+        <p>
+            <b>Stack</b>
+        </p>
+    </div>
+    <div class="column right">
+        <p style="margin-right: 100px;">
+            This project provided an excellent opportunity to delve into the complexities
+             of data structures. I implemented a stack to determine if a given word or 
+             phrase is a palindrome, leveraging the stack's LIFO (last in, first out) 
+             properties for efficient comparison. Additionally, I designed a comprehensive
+              menu function that allows users to interactively test the stack's functionality. 
+        </p>
+    </div>
+</div>
+</body>
